@@ -392,3 +392,75 @@
 	border-radius: 20px;
 	margin-bottom: 25px;
 }
+
+/*Страница услуги компании - services.html*/
+.section_servies_company {
+	max-width: 100%;
+	height: auto;
+}
+.servies_company {
+	max-width: 1296px;
+	height: auto;
+	margin: 0px auto;
+	padding: 150px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 60px 134px;
+}
+.servies_company_header {
+	flex: 0 1 100%;
+}
+.services_list {
+	flex: 0 1 23.6%;
+}
+.services_item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	width: 100%;
+	height: auto;
+	color: var(--purple, #3D348B);
+	font-family: "PT Sans";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 22.4px */
+	margin-bottom: 30px;
+}
+.services_item p {
+	text-decoration: underline dotted;
+	text-underline-offset: 5px;
+}
+.donload_file {
+	padding: 8px 10px;
+	border-radius: 10px;
+	background: var(--blue, #5DB7DE);
+	color: var(--white, #FFF);
+	font-family: "PT Sans";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%; /* 18.2px */
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+}
+.servises_tabs_list {
+	flex: 0 1 66%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.servises_tabs {
+	padding: 30px 35px;	
+	flex: 1 1 48%;
+	height: 223px;
+	border-radius: 20px;
+	background: var(--purple, #3D348B);
+	display: flex;
+	flex-direction: column;
+
+}
