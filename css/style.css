@@ -6,7 +6,7 @@
 /*Шапка и навигация сайта*/
 .header {
 	max-width: 1296px;
-	padding: 40px 0px;
+	padding: 40px 15px;
 	margin: 0px auto;
 	display: flex;
 	justify-content: space-between;
@@ -16,6 +16,19 @@
 	display: flex;
 	gap: 30px;
 	flex: 0 1 auto;
+}
+.menu_button {
+	height: 30px;
+	width: 40px;
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.line_btn {
+	width: 100%;
+	height: 3px;
+	background-color: black;
 }
 .search_filter_block {
 	height: 100%;
@@ -33,7 +46,6 @@
 	margin-right: 20px;
 }
 .search_value {
-
 	width: 150px;
 	height: 24px;
 	opacity: 0.2;
@@ -51,22 +63,34 @@
 .section_first {
 	width: 100%;
 	height: auto;
-	background-image: url('../images/section_first/bg_section_first.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section_first_bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
 }
 
 .section_content_center {
 	margin: 0px auto;
-	padding: 113px 0px;
+	padding: 113px 15px;
 	max-width: 1296px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	z-index: 2;
 }
 .section_description {
-	flex: 0 1 526px;
+	flex: 0 1 40%;
+	z-index: 2;
 }
 .main_title {
 	color: var(--white, #FFF);
@@ -103,9 +127,7 @@
 	text-transform: uppercase;
 }
 .section_tabs {
-	flex-grow: 0;
-	flex-shrink: 1;
-	max-width: 636px;
+	flex: 0 1 49%;
 	height: auto;
 	display: flex;
 	justify-content: flex-end;
@@ -113,7 +135,7 @@
 	gap: 24px 24px;
 }
 .tabs_panel {
-	flex: 0 1 48%;
+	flex: 1 1 47%;
 	height: 250px;
 	border-radius: 20px;
 	padding: 30px 35px;
@@ -167,7 +189,7 @@
 .footer_header_content {
 	max-width: 1296px;
 	margin: 0px auto;
-	padding: 45px 0px;
+	padding: 45px 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -202,7 +224,7 @@
 .footer_nav {
 	max-width: 1296px;
 	margin: 0px auto;
-	padding: 80px 0px;
+	padding: 80px 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -265,9 +287,10 @@
 	position: relative;
 	z-index: 2;
 	margin: 0px auto;
-	padding: 25px 0px;
+	padding: 25px 15px;
 	max-width: 1296px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 15px;
@@ -301,7 +324,7 @@
 	z-index: 1;
 }
 .about_company_content {
-	padding: 100px 0px;
+	padding: 100px 15px;
 	max-width: 1296px;
 	margin: 0px auto;
 	display: flex;
@@ -365,6 +388,7 @@
 .section_news_company {
 	width: 100%;
 	height: auto;
+	padding: 0px 15px;
 }
 .news_company {
 	max-width: 1296px;
@@ -373,22 +397,24 @@
 	padding: 150px 0px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	gap: 60px 24px;
 }
 .news_company_header {
 	flex: 1 1 100%;
 }
 .news_tabs {
-	flex: 0 1 306px;
+	flex: 0 1 22.7%;
 	transition: 0.6s ease-out;
 	cursor: pointer;
+	align-self: flex-start;
+	text-align: start;
 }
 .news_tabs:hover {
 	opacity: 0.8;
 }
 .news_tabs_img {
 	width: 100%;
-	height: 214px;
 	border-radius: 20px;
 	margin-bottom: 25px;
 }
@@ -402,18 +428,18 @@
 	max-width: 1296px;
 	height: auto;
 	margin: 0px auto;
-	padding: 150px 0px;
+	padding: 150px 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 60px 134px;
+	gap: 60px 0px;
 }
 .servies_company_header {
 	flex: 0 1 100%;
 }
 .services_list {
-	flex: 0 1 23.6%;
+	flex: 0 1 306px;
 }
 .services_item {
 	display: flex;
@@ -448,7 +474,7 @@
 	text-transform: uppercase;
 }
 .servises_tabs_list {
-	flex: 0 1 66%;
+	flex: 0 1 65%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
